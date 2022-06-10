@@ -44,17 +44,17 @@ public class Ravenclaw extends Hogwarts {
         this.creativity = creativity;
     }
 
-    public void printRavenclaw(Ravenclaw a) {
+    public void print() {
         System.out.println("Имя: " + getName() + ". Сила магии: " + getPower() + ". Расстояние трансгресии: " + getTransgression() + ". Ум: " + getMind() + ". Мудрость: " + getWisdom() + ". Остроумие: " + getWit() + ". Творчество:" + getCreativity() + ".");
     }
 
-    public void theBestRavenclaw(Ravenclaw a, Ravenclaw b) {
-        int summaA = a.getMind() + a.getWisdom() + a.getWit() + a.getCreativity();
+    public void theBestRavenclaw(Ravenclaw b) {
+        int summaA = this.getMind() + this.getWisdom() + this.getWit() + this.getCreativity();
         int summaB = b.getMind() + b.getWisdom() + b.getWit() + b.getCreativity();;
         if (summaA > summaB) {
-            System.out.println(a.getName() + " лучший Когтевранец, чем " + b.getName());
+            System.out.println(this.getName() + " лучший Когтевранец, чем " + b.getName());
         } else if (summaA < summaB) {
-            System.out.println(b.getName() + " лучший Когтевранец, чем " + a.getName());
+            System.out.println(b.getName() + " лучший Когтевранец, чем " + this.getName());
         } else {
             System.out.println("Ученики равны по успеваемости.");
         }

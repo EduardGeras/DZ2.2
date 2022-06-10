@@ -17,14 +17,14 @@ public class Main {
         Ravenclaw padma = new Ravenclaw("Падма Патил", 44, 20, 72, 43, 44, 62);
         Ravenclaw marcus = new Ravenclaw("Маркус Белби", 55, 12, 72, 38, 62, 55);
 
-        harri.printGryffindor(harri);
-        cedric.printHufflepuff(cedric);
-        marcus.printRavenclaw(marcus);
-        draco.printSlytherin(draco);
-        harri.theBestGryffindor(ron, hermione);
-        zachariah.theBestHufflepuff(zachariah, justin);
-        zhou.theBestRavenclaw(zhou, padma);
-        graham.theBestSlytherin(graham,gregory);
-        harri.theBestHogwarts(harri,draco);
+        harri.print();
+        cedric.print();
+        marcus.print();
+        draco.print();
+        ron.theBestGryffindor(hermione);
+        zachariah.theBestHufflepuff(justin);
+        zhou.theBestRavenclaw(padma);
+        graham.theBestSlytherin(gregory);
+        harri.theBestHogwarts(draco);
     }
 }

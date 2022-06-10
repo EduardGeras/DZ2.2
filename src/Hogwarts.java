@@ -33,13 +33,13 @@ public class Hogwarts {
         this.transgression = transgression;
     }
 
-    public void theBestHogwarts(Hogwarts a, Hogwarts b) {
-        int summaA = a.getPower() + a.getTransgression();
+    public void theBestHogwarts(Hogwarts b) {
+        int summaA = this.getPower() + this.getTransgression();
         int summaB = b.getPower() + b.getTransgression();
         if (summaA > summaB) {
-            System.out.println(a.getName() + " обладает бОльшей мощностью магии, чем " + b.getName());
+            System.out.println(this.getName() + " обладает бОльшей мощностью магии, чем " + b.getName());
         } else if (summaA < summaB) {
-            System.out.println(b.getName() + " обладает бОльшей мощностью магии, чем " + a.getName());
+            System.out.println(b.getName() + " обладает бОльшей мощностью магии, чем " + this.getName());
         } else {
             System.out.println("Ученики равны по магии.");
         }
